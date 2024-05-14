@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Jogos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jogo de Memória</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game-container">
-        <h1>Bem-vindo ao Site de Jogos!</h1>
-        <button onclick="startMemoryGame()">Iniciar Jogo de Memória</button>
+    <div class="memory-game">
+        <div class="memory-card" data-framework="a">
+            <img class="front-face" src="img/a.jpg" alt="Card A">
+            <img class="back-face" src="img/back.jpg" alt="Back of Card">
+        </div>
+        <!-- Adicione mais cartas aqui -->
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
