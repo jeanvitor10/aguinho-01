@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+#game-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#dino {
+    width: 44px;
+    height: 47px;
+    background-image: url('dino.png'); /* Adicione a imagem do dinossauro */
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    animation: run 0.8s steps(2) infinite;
+}
+
+@keyframes run {
+    0% { background-position: 0 0; }
+    100% { background-position: -88px 0; }
+}
